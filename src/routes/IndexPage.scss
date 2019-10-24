@@ -1,0 +1,107 @@
+$color:rgb(96, 69, 227);
+body{ background: url(../assets/images/indexbg.png) no-repeat left top ;color:#333; background-size: 100% 100%;}
+body,html{overflow: hidden;position: relative;}
+.index1{ width: 1920px;height: 960px;position: absolute; left: 50%; top: 0;margin-left: -960px;}
+.wrapBox{width: 1200px; margin: 0 auto; height: 100%; position: relative;}
+.wrapBox>img{position: absolute; left: 0; top: 0; margin-left: -360px;}
+@media screen and (max-width:1200px){html{overflow-x:scroll}}
+.indexBox .img3{ bottom:64px; left: 0;position: absolute;animation:triananimate 8s ease-in infinite;}
+@keyframes triananimate {
+    0% {transform: translateX(-100%);}
+    100% {transform: translateX(500%)}
+}
+.indexBox .img4{left: 50%;bottom: 6px;position: absolute;margin-left: -960px;}
+.indexBox .img5{left: 50%;bottom: 40px;position: absolute;margin-left: -960px;}
+.indexBox .img8{left: 50%;bottom: 0;position: absolute;margin-left: -960px;}
+.index1Box,.index3Box{ width: 1200px;height: 920px; position: absolute; left: 0; top: 0;}
+.index1Box .img1{ top:127px; left: 344px; position: absolute;}
+.index1Box .img2{ top:219px; left: 265px; position: absolute;}
+// .index1Box .img3{ top:830px; left: 262px; position: absolute;}
+// .index1Box .img4{left: 50%;bottom: 6px;position: absolute;margin-left: -960px;}
+// .index1Box .img5{left: 50%;bottom: 6px;position: absolute;margin-left: -960px;}
+// .index1Box .img8{left: 50%;bottom: 0;position: absolute;margin-left: -960px;}
+.index1Box .img7{ top:445px; right: 68px; position: absolute;}
+.index1Box .img7:hover{cursor: pointer;}
+.index1Box .img6{ top:604px; left: 398px; position: absolute; cursor: pointer; width: 400px; height: 80px; line-height: 80px; text-align: center; background-color: #6044e4; border-radius: 40px; transition:all .2s;}
+.index1Box .img6:hover{box-shadow: 3px 10px 10px rgba(78, 87, 254,.2);top:600px; }
+// .rightbtn{width: 400px;height: 56px;line-height: 56px;text-indent: 36px; background-color: #1ac572; border-radius: 6px; overflow: hidden; font-size: 24px; color:#fff; position: relative; left: 656px; top: 574px; letter-spacing: 15px; cursor: pointer;}
+// .rightbtn .btn{width: 75px;height: 56px;line-height: 56px; position: absolute; right: 0; top: 0; background-color: #0cb462; text-indent: 0; text-align: center}
+.rightbtn .btn img{ display: inline-block; margin: 0 auto; text-indent: 0}
+.index2{width: 1190px;height: 734px;position: fixed; left: 50%; top: 50%; margin-left: -595px;margin-top: -367px;}
+.navBox{ display: flex; flex-direction: row; color:#fff;}
+.navBox .navbg{ flex:1; text-align: center; height: 56px;line-height: 56px; font-size: 16px; color:#fff; background-color: rgba(78, 87, 254,.3);transition: all .2s;}
+.navBox .navbg a{display: block; color:#fff; cursor: pointer;}
+.navBox .navbg a:hover,.navAHover{background-color:$color}
+.indexContent{position:absolute; left: 0; top:56px; right: 0; bottom:0; background-color: #fff;}
+.lbtn{ position: absolute; left: 68px; top: 321px; background: url(../assets/images/p1/lbtn.png) no-repeat left top;width: 43px;height: 62px; cursor: pointer; z-index: 9999;}
+.rbtn{ position: absolute; right: 68px; top: 321px;  background: url(../assets/images/p1/rbtn.png) no-repeat left top;width: 43px;height: 62px; cursor: pointer; z-index: 9999;}
+.index2Title{padding-top: 55px;padding-bottom: 48px;}
+.index2Box{padding:0 68px}
+.zs{ font-size: 20px; line-height: 34px; text-indent: 2em;}
+.zs span{color:$color}
+.index2BottomCon{ display: flex; flex-direction: row; font-size: 16px;}
+.index2BottomCon .flexChild{ flex: 1; text-align: center;padding-top: 85px; margin-left: 20px; position: relative;}
+.index2BottomCon .flexChild:last-child{margin-left: 0; margin-right: 20px;}
+.index2BottomCon .stitle{margin-top: 20px;}
+.line{width: 54px;height: 3px;background-color: $color; margin: 0 auto;margin-top: 10px;}
+.showText{ font-size: 42px;color:$color;margin-top: 24px; }
+.showText span{ font-size: 16px}
+.flexBox{width: 380px; height: 112px; border:solid 1px $color; color:$color; font-size: 0; position:relative;overflow: hidden;}
+.flexBox>div{ float: left; font-size: 16px;}
+/* .flexBox::after{ display: block; content: ''; position: absolute; left: 0; top: 0; height: 100%; width: 8px; background-color: #2b72e6; border-radius: 10px;} */
+.flexBox>div.lflex{ font-size: 60px;width: 180px; text-align: center;margin-top: 20px; text-indent: 10px}
+.flexBox>div.lflex span{ font-size: 36px;}
+.flexBox>div.cflex{ font-size: 36px;width: 3px;height: 55px; background-color: $color;margin-top: 28px; opacity: .9;}
+.flexBox>div.rflex{margin-left: 28px; text-align: left}
+.flexBox>div.rflex p:first-child{ font-size: 18px;padding-top: 25px; color:#333}
+.flexBox>div.rflex p:last-child{ font-size: 24px;}
+.flexChild .flexBox:last-child{ margin-top: 58px; overflow: hidden;}
+/* .flexChild .flexBox:last-child::after{ background-color: #0cb462; overflow: hidden;} */
+.flexChild img.page3img{position: absolute; left: 50%; top: 50%;margin-left: -30px;margin-top: 5px;}
+.index2BottomCon .flexChild2{ width: 50%; text-align: center; height: 214px;padding-top: 28px;}
+.index2BottomCon .flexChild2 .showText{margin-top: 7px;}
+.index2BottomCon .flexChild2 .imgBox{text-indent: 0; height: 85px; line-height: 85px; text-align: center}
+.index2BottomCon .flexChild .imgBox{text-indent: 0; height: 125px; line-height: 125px; text-align: center}
+.index2BottomCon2{ display: flex; flex-wrap:wrap; padding: 0 95px}
+/* .index2BottomCon .flexChild2 img{ float: left;margin-left: 55px;} */
+.index2BottomCon .flexChild2>div{ text-indent: 15px;}
+.flexChild .flexChildCon{ width: 50%; float: left; height: 108px;padding-left: 5%; position: relative;}
+.flexChild .flexChildCon:first-child .bdtitle{ font-size: 16px; color:#0fdbd6}
+.flexChild .flexChildCon  .bdtitleIcon{display: block; position: absolute; left: 5px; top: 8px; width: 6px;height: 6px; background-color: #000}
+.flexChild .flexChildCon .bdtitle{ position: relative; text-align: left;}
+.flexChild .flexChildCon span{ font-size: 42px;}
+.flexChild .flexChildCon .bdcontent{text-align:left; text-indent: -18px; margin-top: 10px; font-size: 36px;}
+.flexChild .flexChildCon .bdcontent span{ font-size: 16px;}
+.flexChild .flexChildCon2 .imgBox{ height: 108px; line-height: 108px;}
+.flexChild .flexChildCon2 .showText{ font-size: 42px;}
+.flexChild .flexChildCon2 .showText span{ font-size: 16px;}
+.index2BottomCon .flexChildRight{ display: flex;padding-top: 92px;}
+.flexChildRight>div:first-child{text-align: right}
+.flexChildRight .humanBox{ flex: 1; text-align: center}
+.flexChildRight .humanBox{ align-self: center;}
+.flexChildRight .humanBox .humanCon{ display: block ;margin-top: 22px;text-align:left; padding-left: 55px;}
+.flexChildRight .humanBox .humanCon img{ float: none; margin: 0; display: inline-block; vertical-align: middle;margin-right: 15px;}
+.flexChildRight .humanBox .humanCon .humanNum{ display: inline-block;height: 32px; line-height: 32px; text-align: left; position: relative;display: inline-block; vertical-align: middle;width: 180px;}
+.flexChildRight .humanBox .humanCon .humanNum:after{display: block;content: attr(data-hunmans); color:#fff; text-align:left; font-size: 14px; position: absolute; left:0; top: 0; text-indent: 5px}
+.flexChildRight .humanBox:nth-child(2) .humanNum{ background-color:$color; }
+.flexChildRight .humanBox .humanCon:last-child .humanNum{background-color:#f7666d; }
+.index3Text{ position: absolute;width: 324px; color:#333; font-size: 18px;left: 222px; top:361px;}
+.index3Text span{ font-size: 28px;margin-left: 10px; font-weight: bold}
+.index3Box .img2{left: 695px;top: 281px; margin: 0}
+.index3Box .rightbtn{width: 240px; height: 48px; line-height: 48px; color:#fff; background-color: $color; border-radius: 24px;left: 219px;top: 482px; font-size: 18px; text-indent: 0 ; text-align: center; letter-spacing: 5px; transition:all .2s; position: absolute; cursor: pointer;}
+.index3Box .rightbtn:hover{box-shadow: 3px 3px 3px rgba(78, 87, 254,.5);top: 479px;}
+.index2Content .flexChild2{ display: block;padding-top: 45px;padding-top: 18px;}
+.index1Box{ z-index: 1000}
+.index2{ z-index:999; display:block}
+.index3Box{ z-index: 1000}
+.hideBox{ opacity: 0; z-index: -1}
+.index3Box .lbtn{ top: 446px;background: url(../assets/images/btnleft.png) no-repeat left top}
+.index2Box{position: absolute; left: 0; top: 0;right: 0; bottom: 0;}
+.fadeIn{ z-index: 9998;}
+.bdRightBox{ display: flex; justify-content: space-around;flex-wrap: wrap;align-items: center;height: 100%;}
+.bdRightBox .flexChildCon{ float: none; align-self:center;}
+.firstInit{ display:none}
+.index2BottomCon2{margin-top:-15px}
+.index2BottomCon2 .flexChild2{padding-top:0; height: 300px;}
+.index2Content7{ margin: 0 40px 0 0}
+
