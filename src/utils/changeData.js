@@ -7,8 +7,9 @@
           //替换月份
           pageDatas.push({month:date[1].replace(0, '')})
           //1综述
+          var monthDate = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
           pageDatas.push({
-            data1:date[0] + '年' + date[1] + '月' + 31 + '日',
+            data1:date[0] + '年' + date[1] + '月' + monthDate[(new Date().getMonth())] + '日',
             data2:tochangeMoney(data.platform_deal_money.toString().split('.')[0].substr(0,
               data
               .platform_deal_money.toString().split('.')[0]
