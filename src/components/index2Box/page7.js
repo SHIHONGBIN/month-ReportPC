@@ -31,7 +31,7 @@ const Page7 = (props) => {
           <div className={styles.imgBox}><img src={p71} alt='' /></div>
             <div className={styles.stitle}>{ajaxData[0]?ajaxData[0].month:''}月新增注册用户</div>
             <div className={styles.line}></div>
-            <div className={styles.showText} dangerouslySetInnerHTML={{__html:!ajaxData[7]?ajaxData[7].data2:'0<span>人</span>'}}>
+            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[7]?ajaxData[7].data2:'0<span>人</span>'}}>
             </div>
           </div>
           </div>

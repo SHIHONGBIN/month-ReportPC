@@ -27,7 +27,7 @@ const Page2 = (props) => {
             <img src={img2} alt='' />
             <div className={styles.stitle}>新增成交量</div>
             <div className={styles.line}></div>
-            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[2]?ajaxData[2].data2:'0<span>元</span>'}}>
+            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[2].data2?ajaxData[2].data2:'0<span>元</span>'}}>
             </div>
           </div>
         </div>

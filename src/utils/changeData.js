@@ -3,9 +3,9 @@
             var pageDatas = []
             if(data){
           var date = data.statistic_time.split('T')[0].split('-')
-          
+          console.log(date)
           //替换月份
-          pageDatas.push({month:date[1].replace(0, '')})
+          pageDatas.push({month:date[1]})
           //1综述
           var monthDate = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]
           pageDatas.push({
@@ -55,13 +55,20 @@
               data2:tochangeMoney(data.month_already_interest.toString().split('.')[0], 4)
           })
           //6项目分部
+          var bd = ['30','60','90','120','180','360']
           pageDatas.push({
               data1:['#0dcfef', '#de5ae6', '#ffc33a', '#ff5f78', '#8a58f1', '#2f4beb'],
-              data2: data.fact_date_point_borrowDTO.map(function (i, index) {
+              data2: data.fact_date_point_borrowDTO.length!=0?data.fact_date_point_borrowDTO.map(function (i, index) {
                 return {
                     value: i.month_borrow_count,
                     name:  i.month_borrow_day,
                     money: tochangeMoney(i.month_borrow_money.toString().split('.')[0], 4),
+                }
+            }):bd.map(function (i, index) {
+                return {
+                    value: 0,
+                    name:  i,
+                    money: 0,
                 }
             })
             }

@@ -22,28 +22,28 @@ const Page4 = (props) => {
             <div className={styles.imgBox}><img src={img1} alt='' /></div>
             <div className={styles.stitle}>累计赚取收益</div>
             <div className={styles.line}></div>
-            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[4]?ajaxData[4].data1:'0<span>元</span>'}}>
+            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[4].data1?ajaxData[4].data1:'0<span>元</span>'}}>
             </div>
           </div>
           <div className={dataIndex===3?`${aniamteStyles.animated} ${aniamteStyles.fadeIn} ${styles.flexChild2}`:`${aniamteStyles.animated} ${aniamteStyles.fadeOut}  ${styles.flexChild2}`}>
           <div className={styles.imgBox}><img src={img2} alt='' /></div>
-            <div className={styles.stitle}>{ajaxData[0]?ajaxData[0].month:''}月新增受益</div>
+            <div className={styles.stitle}>{ajaxData[0]?ajaxData[0].month:''}月新增收益</div>
             <div className={styles.line}></div>
-            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[4]?ajaxData[4].data2:'0<span>元</span>'}}>
+            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[4].data2?ajaxData[4].data2:'0<span>元</span>'}}>
             </div>
           </div>
           <div className={dataIndex===3?`${aniamteStyles.animated} ${aniamteStyles.fadeIn} ${styles.flexChild2}`:`${aniamteStyles.animated} ${aniamteStyles.fadeOut}  ${styles.flexChild2}`}>
           <div className={styles.imgBox}><img src={img3} alt='' /></div>
             <div className={styles.stitle}>{ajaxData[0]?ajaxData[0].month:''}月收益的用户人群</div>
             <div className={styles.line}></div>
-            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[4]?ajaxData[4].data3:'0<span>元</span>'}}>
+            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[4].data3?ajaxData[4].data3:'0<span>元</span>'}}>
             </div>
           </div>
           <div className={dataIndex===3?`${aniamteStyles.animated} ${aniamteStyles.fadeIn} ${styles.flexChild2}`:`${aniamteStyles.animated} ${aniamteStyles.fadeOut}  ${styles.flexChild2}`}>
           <div className={styles.imgBox}><img src={img4} alt='' /></div>
             <div className={styles.stitle}>{ajaxData[0]?ajaxData[0].month:''}月人均收益金额</div>
             <div className={styles.line}></div>
-            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[4]?ajaxData[4].data4:'0<span>元</span>'}}>
+            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[4].data4?ajaxData[4].data4:'0<span>元</span>'}}>
             </div>
           </div>
         </div>

@@ -20,14 +20,14 @@ const Page5 = (props) => {
         <div className={styles.imgBox}><img src={img1} alt='' /></div>
             <div className={styles.stitle}>{ajaxData[0]?ajaxData[0].month:''}月份借款人已还本金</div>
             <div className={styles.line}></div>
-            <div className={styles.showText} dangerouslySetInnerHTML={{__html:!ajaxData[5]?ajaxData[5].data1:'0<span>元</span>'}}>
+            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[5].data1?ajaxData[5].data1:'0<span>元</span>'}}>
             </div>
           </div>
           <div className={dataIndex===4?`${aniamteStyles.animated} ${aniamteStyles.fadeIn} ${styles.flexChild}`:`${aniamteStyles.animated} ${aniamteStyles.fadeOut}  ${styles.flexChild}`}>
           <div className={styles.imgBox}><img src={img2} alt='' /></div>
             <div className={styles.stitle}>{ajaxData[0]?ajaxData[0].month:''}月份借款人已还利息</div>
             <div className={styles.line}></div>
-            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[5]?ajaxData[5].data2:'0<span>元</span>'}}>
+            <div className={styles.showText} dangerouslySetInnerHTML={{__html:ajaxData[5].data2?ajaxData[5].data2:'0<span>元</span>'}}>
             </div>
           </div>
         </div>

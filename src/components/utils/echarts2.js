@@ -8,7 +8,7 @@ class Examples extends React.PureComponent {
 
     this.state = {
       color1: props.props?props.props.data1:'',
-      datas:props.props?props.props.data2:''
+      datas:props.props?props.props.data2:'0'
     };
   }
   render() {
@@ -23,7 +23,7 @@ class Examples extends React.PureComponent {
         color:[this.state.color1[0], this.state.color1[1],this.state.color1[2],this.state.color1[3],this.state.color1[4],this.state.color1[5],this.state.color1[6]],
         data: this.state.datas?this.state.datas.map((item, index)=> {
           return {
-            value: item.value,
+            value: item.value||0,
             name: `期限${item.name}天标` 
           }
         }):'',
