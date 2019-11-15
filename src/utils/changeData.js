@@ -28,7 +28,7 @@
           )
           //3出借方式
           pageDatas.push({
-              data1:['rgb(96, 69, 227)', '#cccccc'],
+              data1:['rgb(20, 159, 240)', '#cccccc'],
               data2:savePointTow(data.auto_invest_percent * 1000) + '%',
               data3:savePointTow(data.manual_invest_percent * 1000) +
               '%',

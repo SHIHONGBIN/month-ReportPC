@@ -14,7 +14,7 @@ const Page1 = (props) => {
       <div className={styles.index2Title}>
         <img src={title} className={dataIndex==0?`${aniamteStyles.animated} ${aniamteStyles.fadeIn}`:`${aniamteStyles.animated} ${aniamteStyles.fadeOut}`} />
       </div>
-      <div className={styles.index2Content}><div className={dataIndex===0?`${aniamteStyles.animated} ${aniamteStyles.fadeIn} ${styles.zs}`:`${aniamteStyles.animated} ${aniamteStyles.fadeOut}  ${styles.zs}`}>国佳财富平台截止至{ajaxData[1]?ajaxData[1].data1:''}，平台成交量超过<span>{ajaxData[1]?ajaxData[1].data2:''}</span>万元，用户收益超<span>{ajaxData[1]?ajaxData[1].data3:''}</span>万元。十月份平台顺利完成了对银行资金存管系统的全新升级，优化便捷了转账充值的操作方式，以及恢复了快捷支付充值渠道。平台一直用心经营，在服务效率、用户体验等多方面不断提升，不断优化改进。</div>
+      <div className={styles.index2Content}><div className={dataIndex===0?`${aniamteStyles.animated} ${aniamteStyles.fadeIn} ${styles.zs}`:`${aniamteStyles.animated} ${aniamteStyles.fadeOut}  ${styles.zs}`}>国佳财富平台截止至{ajaxData[1]?ajaxData[1].data1:''}，平台成交量超过<span>{ajaxData[1]?ajaxData[1].data2:''}</span>万元，用户收益超<span>{ajaxData[1]?ajaxData[1].data3:''}</span>万元。平台自运营以来，一直坚持严格风控、信息透明的原则，规范运营，积极为客户提供更专业、高效、便捷、完善的创新金融服务。</div>
         <div className={styles.index2BottomCon}>
         <div className={dataIndex==0?`${aniamteStyles.animated} ${aniamteStyles.fadeIn} ${styles.flexChild}`:`${aniamteStyles.animated} ${aniamteStyles.fadeOut}  ${styles.flexChild}`}>
             <img src={img1} alt='' />

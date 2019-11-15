@@ -1,5 +1,5 @@
-$color:rgb(96, 69, 227);
-body{ background: url(../assets/images/indexbg.png) no-repeat left top ;color:#333; background-size: 100% 100%;}
+$color:rgb(20, 159, 240);
+body{ background: url(../assets/images/indexbg.png) no-repeat left top ;color:#333; background-size:cover;}
 body,html{overflow: hidden;position: relative;}
 .index1{ width: 1920px;height: 960px;position: absolute; left: 50%; top: 0;margin-left: -960px;}
 .wrapBox{width: 1200px; margin: 0 auto; height: 100%; position: relative;}
@@ -14,22 +14,22 @@ body,html{overflow: hidden;position: relative;}
 .indexBox .img5{left: 50%;bottom: 40px;position: absolute;margin-left: -960px;}
 .indexBox .img8{left: 50%;bottom: 0;position: absolute;margin-left: -960px;}
 .index1Box,.index3Box{ width: 1200px;height: 920px; position: absolute; left: 0; top: 0;}
-.index1Box .img1{ top:127px; left: 344px; position: absolute;}
-.index1Box .img2{ top:219px; left: 265px; position: absolute;}
+.index1Box .img1{ top:127px; left: 360px; position: absolute;}
+.index1Box .img2{ top:219px; left: 318px; position: absolute;}
 // .index1Box .img3{ top:830px; left: 262px; position: absolute;}
 // .index1Box .img4{left: 50%;bottom: 6px;position: absolute;margin-left: -960px;}
 // .index1Box .img5{left: 50%;bottom: 6px;position: absolute;margin-left: -960px;}
 // .index1Box .img8{left: 50%;bottom: 0;position: absolute;margin-left: -960px;}
-.index1Box .img7{ top:445px; right: 68px; position: absolute;}
+.index1Box .img7{ top:445px; right: 13px; position: absolute;}
 .index1Box .img7:hover{cursor: pointer;}
-.index1Box .img6{ top:604px; left: 398px; position: absolute; cursor: pointer; width: 400px; height: 80px; line-height: 80px; text-align: center; background-color: #6044e4; border-radius: 40px; transition:all .2s;}
+.index1Box .img6{ top:604px; left: 398px; position: absolute; cursor: pointer; width: 400px; text-align: center; background-color: $color; border-radius: 40px; transition:all .2s;display: flex;align-items: center;justify-content: center;height: 80px;}
 .index1Box .img6:hover{box-shadow: 3px 10px 10px rgba(78, 87, 254,.2);top:600px; }
 // .rightbtn{width: 400px;height: 56px;line-height: 56px;text-indent: 36px; background-color: #1ac572; border-radius: 6px; overflow: hidden; font-size: 24px; color:#fff; position: relative; left: 656px; top: 574px; letter-spacing: 15px; cursor: pointer;}
 // .rightbtn .btn{width: 75px;height: 56px;line-height: 56px; position: absolute; right: 0; top: 0; background-color: #0cb462; text-indent: 0; text-align: center}
 .rightbtn .btn img{ display: inline-block; margin: 0 auto; text-indent: 0}
 .index2{width: 1190px;height: 734px;position: fixed; left: 50%; top: 50%; margin-left: -595px;margin-top: -367px;}
 .navBox{ display: flex; flex-direction: row; color:#fff;}
-.navBox .navbg{ flex:1; text-align: center; height: 56px;line-height: 56px; font-size: 16px; color:#fff; background-color: rgba(78, 87, 254,.3);transition: all .2s;}
+.navBox .navbg{ flex:1; text-align: center; height: 56px;line-height: 56px; font-size: 16px; color:#fff; background-color: rgba(20, 159, 240,.3);transition: all .2s;}
 .navBox .navbg a{display: block; color:#fff; cursor: pointer;}
 .navBox .navbg a:hover,.navAHover{background-color:$color}
 .indexContent{position:absolute; left: 0; top:56px; right: 0; bottom:0; background-color: #fff;}
@@ -84,8 +84,8 @@ body,html{overflow: hidden;position: relative;}
 .flexChildRight .humanBox .humanCon .humanNum{ display: inline-block;height: 32px; line-height: 32px; text-align: left; position: relative;display: inline-block; vertical-align: middle;width: 180px;}
 .flexChildRight .humanBox .humanCon .humanNum:after{display: block;content: attr(data-hunmans); color:#fff; text-align:left; font-size: 14px; position: absolute; left:0; top: 0; text-indent: 5px}
 .flexChildRight .humanBox:nth-child(2) .humanNum{ background-color:$color; }
-.flexChildRight .humanBox .humanCon:last-child .humanNum{background-color:#f7666d; }
-.index3Text{ position: absolute;width: 324px; color:#333; font-size: 18px;left: 222px; top:361px;}
+.flexChildRight .humanBox .humanCon:last-child .humanNum{background-color:#5b6ee5; }
+.index3Text{ position: absolute;width: 324px; color:#fff; font-size: 18px;left: 222px; top:361px;}
 .index3Text span{ font-size: 28px;margin-left: 10px; font-weight: bold}
 .index3Box .img2{left: 695px;top: 281px; margin: 0}
 .index3Box .rightbtn{width: 240px; height: 48px; line-height: 48px; color:#fff; background-color: $color; border-radius: 24px;left: 219px;top: 482px; font-size: 18px; text-indent: 0 ; text-align: center; letter-spacing: 5px; transition:all .2s; position: absolute; cursor: pointer;}
