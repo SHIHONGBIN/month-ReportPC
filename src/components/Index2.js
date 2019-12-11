@@ -15,7 +15,8 @@ const Example = (props) => {
   const {dispatch} = props
   console.log(props)
   return (
-    <div className={props.indexTitle.isFirstLoad2?`${styles.firstInit}`:``}  style={{zIndex:props.indexTitle.pageIndex==1?"9999":"-999"}}  >
+    <div className={props.indexTitle.isFirstLoad2?`${styles.firstInit}`:`${styles.positionrelative}`}  style={{zIndex:props.indexTitle.pageIndex==1?"9999":"-999"}}  >
+      <div className={pageIndex === 1? `${styles.index1bg} ${aniamteStyles.animated} ${aniamteStyles.fadeIn}`:`${styles.index1bg} ${aniamteStyles.animated} ${aniamteStyles.fadeOut}` } style={{opacity:0}}></div>
     <div className={pageIndex === 1? `${styles.index2} ${aniamteStyles.animated} ${aniamteStyles.fadeInUp}`:`${styles.index2} ${aniamteStyles.animated} ${aniamteStyles.fadeOutUp}` } style={{opacity:0}}>
       <div className={styles.navBox}>
       {props.navTitle.map((item, index)=>

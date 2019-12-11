@@ -28,7 +28,7 @@
           )
           //3出借方式
           pageDatas.push({
-              data1:['rgb(20, 159, 240)', '#cccccc'],
+              data1:['rgb(155, 126, 40)', '#cccccc'],
               data2:savePointTow(data.auto_invest_percent * 1000) + '%',
               data3:savePointTow(data.manual_invest_percent * 1000) +
               '%',
@@ -62,7 +62,7 @@
                 return {
                     value: i.month_borrow_count,
                     name:  i.month_borrow_day,
-                    money: tochangeMoney(i.month_borrow_money.toString().split('.')[0], 4),
+                    money: tochangeMoney(i.month_borrow_money.toString().split('.')[0], 4).split('<span>万</span>')[0]+'<span>万</span>',
                 }
             }):bd.map(function (i, index) {
                 return {
@@ -82,7 +82,7 @@
             }
           )
         }else{
-            alert('无数据，服务器错误！')
+            alert('未获取到当月数据！')
         }
           return pageDatas
       }

@@ -16,7 +16,7 @@ export default {
     sectionDisplayNone:'none',
     //当前页
     pageIndex: 0,
-    monthTitle: '11月份运营月报',
+    monthTitle: '',
     navTitle: ['01 综述', '02 成交量', '03 出借方式', '04 赚取收益', '05 已还本息', '06 项目分布', '07 用户注册'],
     //当前导航
     navCurIndex: 0,
@@ -40,7 +40,7 @@ export default {
       // dispatch({type:'runTrain'})
     }; 
     //设置标题
-    document.title = '11月份运营月报'; }
+    document.title = '12月份运营月报'; }
   },
 
   effects: {
